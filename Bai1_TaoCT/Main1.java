@@ -20,6 +20,15 @@ public class Main1 extends Application {
         primaryStage.setTitle("Hello World");
         button = new Button();
         button.setText("Say Hello World");
+        
+        // button.setOnAction(new EventHandler<ActionEvent>() {
+        //     @Override
+        //     public void handle(ActionEvent event) {
+        //         System.out.println("Hello Kas");
+        //     }
+        // });
+
+        //Dung bieu thuc lambda
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
