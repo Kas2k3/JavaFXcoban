@@ -29,12 +29,10 @@ public class Main1 extends Application {
         // });
 
         //Dung bieu thuc lambda
-        button.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("Hello Kas");
-            }
+        button.setOnAction((ActionEvent event) -> {
+            System.out.println("Hello Kas");
         });
+        
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
         Scene scene = new Scene(layout, 300, 250);
